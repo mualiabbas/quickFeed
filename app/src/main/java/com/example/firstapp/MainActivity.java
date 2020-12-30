@@ -17,26 +17,8 @@ public class MainActivity extends AppCompatActivity {
         configureNextButton();
     }
 
-    public void onBtnClick (View view) {
-        TextView txtFirst = findViewById(R.id.txtFirst);
-        EditText firstName = findViewById(R.id.firstName);
-        TextView txtLast = findViewById(R.id.txtLast);
-        EditText lastName = findViewById(R.id.lastName);
-        TextView txtEmail = findViewById(R.id.txtEmail);
-        EditText email = findViewById(R.id.email);
-
-        txtFirst.setText("fuck you " + firstName.getText().toString());
-        txtLast.setText(lastName.getText().toString());
-        txtEmail.setText(email.getText().toString());
-
-        if (firstName.getText().toString() == null || firstName.getText().toString().trim().isEmpty()) {
-            txtFirst.setText("Fuck you try again");
-        }
-    }
-
-    private void ConfigureNextButton() {
+    private void configureNextButton() {
         Button  nextButton = (Button) findViewById(R.id.searchbut);
-        nextButton.setOnClickListener(new View.OnClickListener()
     }
 
 }
